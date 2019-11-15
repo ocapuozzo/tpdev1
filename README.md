@@ -4,9 +4,9 @@ Ce TP fait suite aux fiches : Encapsulation et  Polymorphisme
 
 Considérons une application qui travaille avec des objets de type Client (nom, prénom), 
 liés à une adresse de domicile, optionnelle, dite de livraison. La classe _Adresse_ sera composée 
-des propriétés _rue_, _ville_ et _codePostal_.
+des propriétés _nom_, _rue_, _ville_ et _codePostal_.
 
-![classe Client](https://raw.githubusercontent.com/ocapuozzo/tpdev1/master/Client.png)
+![classe Adresse](https://raw.githubusercontent.com/ocapuozzo/tpdev1/master/Adresse.png)
 
 
 **A]** Concevoir un diagramme de classes qui présente les classes Adresse et Client et leurs associations. Vous utilisez un modeleur UML, par exemple dia.
@@ -34,6 +34,11 @@ Modifier le programme afin de
 2. Afficher l'état textuel de l'objet Client ainsi créé (présentant toutes les caractéristiques de l'objet : nom, prénom, adresse de domicile et de livraison.
        
 **C-b]** Dans la branche de test, ajouter au moins 2 méthodes de tests unitaires qui vérifient lle respect de la spécification fonctionnelle donnée en C-a (dite aussi règle de gestion) 
+
+**IMPORTANT**
+|Pour une bonne utilisation des assertEquals, prévoir une redéfinition des méthodes **equals** et **hascode** dans vos classes métier, qui appuient leur logique sur le premier niveau des attributs (pas d'exploration en profondeur). Pour cela, aidez-vous de votre IDE pour la génération des ces méthodes (dans le code source d'une classe métier, clic droit -> generate -> equals et hascode)|
+
+
 
 **D]** Après analyse, la décision est prise de permettre à un client d'avoir plusieurs adresses de livraison (de 0 à n) . Lorsque aucune adresse de livraison n'est renseignée, c'est toujours l'adresse de domicile qui est retenue comme adresse de livraison.
 
