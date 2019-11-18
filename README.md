@@ -3,7 +3,7 @@
 Ce TP fait suite aux fiches : Encapsulation et  Polymorphisme
 
 Considérons une application qui travaille avec des objets de type Client (nom, prénom), 
-liés à une adresse de domicile, optionnelle, dite de livraison. La classe _Adresse_ sera composée 
+liés à une adresse de domicile, et une autre optionnelle, dite de livraison. La classe _Adresse_ sera composée 
 des propriétés _nom_, _rue_, _ville_ et _codePostal_.
 
 ![classe Adresse](https://raw.githubusercontent.com/ocapuozzo/tpdev1/master/Adresse.png)
@@ -57,7 +57,8 @@ nom=Knuth, rue=1 rue du cinema, codePostal=13001, ville=Marseille
 ```       
 4. Affiche l'état textuel de l'objet Client ainsi créé.
        
-**E]** On souhaite maintenant étendre les fonctionnalités de l'application avec des adresses intégrant, en plus des attributs rue, ville et codePostal, les attributs email et url (valeur optionnelle), sans modifier les classes actuelles.  Pour cela, vous décidez de concevoir une nouvelle classe adresse, nommée AdresseEtendue.
+**E]** On souhaite maintenant étendre les fonctionnalités de l'application 
+avec des adresses intégrant, en plus des attributs actuels, les attributs email et url (valeur optionnelle), sans modifier les classes actuelles.  Pour cela, vous décidez de concevoir une nouvelle classe adresse, nommée AdresseEtendue.
        
 **E-a]** Avec l'aide du programme dia, proposer un diagramme de classes représentant la relation entre Client, la classe Adresse et la nouvelle classe. 
        
